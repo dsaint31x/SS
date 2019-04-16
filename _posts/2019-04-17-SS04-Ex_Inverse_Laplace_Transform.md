@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Ex : Inverse Lapalce Transform"
 date:   2019-04-17 23:47:59
 author: dsaint31
