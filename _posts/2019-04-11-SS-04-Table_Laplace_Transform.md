@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[SS] 04 Laplace Transform Table"
 date:   2018-04-11 11:33:59
 author: dsaint31
