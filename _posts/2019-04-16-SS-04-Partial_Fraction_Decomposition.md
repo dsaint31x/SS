@@ -1,5 +1,5 @@
 ---
-title:  "[SS] Partial Fraction Decomposition"
+title:  "[SS] 04 Inverse Laplace Transform : Partial Fraction Decomposition"
 categories: Signals_and_Systems
 last_modified_at: 2019-04-16 23:47:59
 author: dsaint31
