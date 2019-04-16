@@ -29,7 +29,7 @@ distinct pole의 경우로서 다음과 같이 A,B,C를 구할 수 있음.
 $$
 \begin {align*}
 A&= \left. \frac{8s^2-7s-6}{(s-3)(s+2)} \right |_{s=0} \\
-&= \frac{0-0-6}{-3\cdot 2}
+&= \frac{0-0-6}{-3\cdot 2} \\
 &= 1
 \end {align*}
 $$
@@ -37,7 +37,7 @@ $$
 $$
 \begin {align*}
 B&= \left. \frac{8s^2-7s-6}{(s)(s+2)} \right |_{s=3} \\
-&= \frac{72-21-6}{3\cdot 5} = \frac{45}{15}
+&= \frac{72-21-6}{3\cdot 5} = \frac{45}{15} \\
 &= 3
 \end {align*}
 $$
@@ -45,7 +45,7 @@ $$
 $$
 \begin {align*}
 B&= \left. \frac{8s^2-7s-6}{(s)(s-3)} \right |_{s=-2} \\
-&= \frac{32+14-6}{-2\cdot -5} = \frac{40}{10}
+&= \frac{32+14-6}{-2\cdot -5} = \frac{40}{10} \\
 &= 4
 \end {align*}
 $$
