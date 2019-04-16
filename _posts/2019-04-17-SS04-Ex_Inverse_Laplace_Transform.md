@@ -64,10 +64,10 @@ $$
 
 ROC는 다음과 같음.
 $$
-Re{s}>0 \\
-Re{s}>-(-3)=3 \\
-Re{s}>-2\\
-\therefore Re{s}>3
+Re(s)>0 \\
+Re(s)>-(-3)=3 \\
+Re(s)>-2\\
+\therefore Re(s)>3
 $$
 
 ----
