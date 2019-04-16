@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Table : Fourier Transform | Your awesome title</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Table : Fourier Transform" />
+<meta name="author" content="dsaint31" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Short Table of Fourier Transforms @(Signal and System)[#Fourier] # $x(t)$ $X(\omega)$ 1 $e^{-a t} u(t) , a&gt;0$ $\frac{1}{a+j\omega}$ 2 $e^{a t} u(-t) , a&gt;0$ $\frac{1}{a-j\omega}$ 3 $e^{-a \vert t\vert}, a&gt;0$ $\frac{2a}{a^2+\omega^2}$ 4 $te^{-a t}u(t), a&gt;0$ $\frac{1}{ (a+j\omega)^2}$ 5 $t^ne^{-a t}u(t), a&gt;0$ $\frac{n!}{ (a+j\omega)^{n+1}}$ 6 $\delta(t)$ $1$ 7 $1$ $2\pi \delta(\omega)$ 8 $e^{j\omega_0t}$ $2\pi \delta (\omega-\omega_0) $ 9 $\text{sgn}(t)$ $\frac{2}{j\omega}$ 10 $u(t)$ $\pi \delta(\omega) +\frac{1}{j\omega}$ 11 $\cos \omega_0 t$ $\pi \left[ \delta(\omega+\omega_0) + \delta (\omega-\omega_0) \right]$ 12 $\sin \omega_0 t$ $j\pi \left[ \delta(\omega+\omega_0) - \delta (\omega-\omega_0) \right]$ 13 $\cos \omega_0 t u(t)$ $\frac{\pi}{2} \left[ \delta(\omega+\omega_0) + \delta (\omega-\omega_0) \right] +\frac{j\omega}{\omega_0^2-\omega^2}$ 14 $\sin \omega_0 t u(t)$ $\frac{\pi}{2j} \left[ \delta(\omega+\omega_0) - \delta (\omega-\omega_0) \right] +\frac{\omega_0}{\omega_0^2-\omega^2}$ 15 $e^{-at} \sin \omega_0t u(t), a&gt;0$ $ \frac{\omega_0}{(a+j\omega)^2+\omega_0^2}$ 16 $e^{-at} \cos \omega_0t u(t), a&gt;0$ $ \frac{a+j\omega}{(a+j\omega)^2+\omega_0^2}$ 17 $ \sum_{n=-\infty}^{\infty} \delta(t-nT_s)$ $ \omega_0 \sum_{n=-\infty}^{\infty} \delta(\omega-n\omega_0) , \omega_0=\frac{2\pi}{T_s}$ 18 $ \text{rect}_\tau (t)$, 너비가 $\tau$인 rectangle pulse $ \tau \text{sinc}\left ( \frac{\omega \tau}{2\pi}\right)$ 19 $ \frac{W}{2\pi} \text{sinc}\left ( \frac{W}{2\pi}t\right)$ $\text{rect}_W (\omega)$, 너비가 $W$인 rectangle pulse$ 20 $ \Delta \left ( \frac{t}{\tau}\right)$ 기울기가 $\frac{1}{\tau}$인 삼각파 $ \tau \text{sinc}^2 \left ( \frac{\omega \tau}{2\pi}\right)$ 21 $ e^{-\frac{t^2}{2\sigma ^2}}$ $ \sigma \sqrt{\pi} e^{-\frac{\sigma^2\omega^2}{2}}$" />
+<meta property="og:description" content="A Short Table of Fourier Transforms @(Signal and System)[#Fourier] # $x(t)$ $X(\omega)$ 1 $e^{-a t} u(t) , a&gt;0$ $\frac{1}{a+j\omega}$ 2 $e^{a t} u(-t) , a&gt;0$ $\frac{1}{a-j\omega}$ 3 $e^{-a \vert t\vert}, a&gt;0$ $\frac{2a}{a^2+\omega^2}$ 4 $te^{-a t}u(t), a&gt;0$ $\frac{1}{ (a+j\omega)^2}$ 5 $t^ne^{-a t}u(t), a&gt;0$ $\frac{n!}{ (a+j\omega)^{n+1}}$ 6 $\delta(t)$ $1$ 7 $1$ $2\pi \delta(\omega)$ 8 $e^{j\omega_0t}$ $2\pi \delta (\omega-\omega_0) $ 9 $\text{sgn}(t)$ $\frac{2}{j\omega}$ 10 $u(t)$ $\pi \delta(\omega) +\frac{1}{j\omega}$ 11 $\cos \omega_0 t$ $\pi \left[ \delta(\omega+\omega_0) + \delta (\omega-\omega_0) \right]$ 12 $\sin \omega_0 t$ $j\pi \left[ \delta(\omega+\omega_0) - \delta (\omega-\omega_0) \right]$ 13 $\cos \omega_0 t u(t)$ $\frac{\pi}{2} \left[ \delta(\omega+\omega_0) + \delta (\omega-\omega_0) \right] +\frac{j\omega}{\omega_0^2-\omega^2}$ 14 $\sin \omega_0 t u(t)$ $\frac{\pi}{2j} \left[ \delta(\omega+\omega_0) - \delta (\omega-\omega_0) \right] +\frac{\omega_0}{\omega_0^2-\omega^2}$ 15 $e^{-at} \sin \omega_0t u(t), a&gt;0$ $ \frac{\omega_0}{(a+j\omega)^2+\omega_0^2}$ 16 $e^{-at} \cos \omega_0t u(t), a&gt;0$ $ \frac{a+j\omega}{(a+j\omega)^2+\omega_0^2}$ 17 $ \sum_{n=-\infty}^{\infty} \delta(t-nT_s)$ $ \omega_0 \sum_{n=-\infty}^{\infty} \delta(\omega-n\omega_0) , \omega_0=\frac{2\pi}{T_s}$ 18 $ \text{rect}_\tau (t)$, 너비가 $\tau$인 rectangle pulse $ \tau \text{sinc}\left ( \frac{\omega \tau}{2\pi}\right)$ 19 $ \frac{W}{2\pi} \text{sinc}\left ( \frac{W}{2\pi}t\right)$ $\text{rect}_W (\omega)$, 너비가 $W$인 rectangle pulse$ 20 $ \Delta \left ( \frac{t}{\tau}\right)$ 기울기가 $\frac{1}{\tau}$인 삼각파 $ \tau \text{sinc}^2 \left ( \frac{\omega \tau}{2\pi}\right)$ 21 $ e^{-\frac{t^2}{2\sigma ^2}}$ $ \sigma \sqrt{\pi} e^{-\frac{\sigma^2\omega^2}{2}}$" />
+<link rel="canonical" href="http://localhost:4000/signals_and_systems/2018/04/24/SS_FT_Table.html" />
+<meta property="og:url" content="http://localhost:4000/signals_and_systems/2018/04/24/SS_FT_Table.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-24T22:33:59+09:00" />
+<script type="application/ld+json">
+{"description":"A Short Table of Fourier Transforms @(Signal and System)[#Fourier] # $x(t)$ $X(\\omega)$ 1 $e^{-a t} u(t) , a&gt;0$ $\\frac{1}{a+j\\omega}$ 2 $e^{a t} u(-t) , a&gt;0$ $\\frac{1}{a-j\\omega}$ 3 $e^{-a \\vert t\\vert}, a&gt;0$ $\\frac{2a}{a^2+\\omega^2}$ 4 $te^{-a t}u(t), a&gt;0$ $\\frac{1}{ (a+j\\omega)^2}$ 5 $t^ne^{-a t}u(t), a&gt;0$ $\\frac{n!}{ (a+j\\omega)^{n+1}}$ 6 $\\delta(t)$ $1$ 7 $1$ $2\\pi \\delta(\\omega)$ 8 $e^{j\\omega_0t}$ $2\\pi \\delta (\\omega-\\omega_0) $ 9 $\\text{sgn}(t)$ $\\frac{2}{j\\omega}$ 10 $u(t)$ $\\pi \\delta(\\omega) +\\frac{1}{j\\omega}$ 11 $\\cos \\omega_0 t$ $\\pi \\left[ \\delta(\\omega+\\omega_0) + \\delta (\\omega-\\omega_0) \\right]$ 12 $\\sin \\omega_0 t$ $j\\pi \\left[ \\delta(\\omega+\\omega_0) - \\delta (\\omega-\\omega_0) \\right]$ 13 $\\cos \\omega_0 t u(t)$ $\\frac{\\pi}{2} \\left[ \\delta(\\omega+\\omega_0) + \\delta (\\omega-\\omega_0) \\right] +\\frac{j\\omega}{\\omega_0^2-\\omega^2}$ 14 $\\sin \\omega_0 t u(t)$ $\\frac{\\pi}{2j} \\left[ \\delta(\\omega+\\omega_0) - \\delta (\\omega-\\omega_0) \\right] +\\frac{\\omega_0}{\\omega_0^2-\\omega^2}$ 15 $e^{-at} \\sin \\omega_0t u(t), a&gt;0$ $ \\frac{\\omega_0}{(a+j\\omega)^2+\\omega_0^2}$ 16 $e^{-at} \\cos \\omega_0t u(t), a&gt;0$ $ \\frac{a+j\\omega}{(a+j\\omega)^2+\\omega_0^2}$ 17 $ \\sum_{n=-\\infty}^{\\infty} \\delta(t-nT_s)$ $ \\omega_0 \\sum_{n=-\\infty}^{\\infty} \\delta(\\omega-n\\omega_0) , \\omega_0=\\frac{2\\pi}{T_s}$ 18 $ \\text{rect}_\\tau (t)$, 너비가 $\\tau$인 rectangle pulse $ \\tau \\text{sinc}\\left ( \\frac{\\omega \\tau}{2\\pi}\\right)$ 19 $ \\frac{W}{2\\pi} \\text{sinc}\\left ( \\frac{W}{2\\pi}t\\right)$ $\\text{rect}_W (\\omega)$, 너비가 $W$인 rectangle pulse$ 20 $ \\Delta \\left ( \\frac{t}{\\tau}\\right)$ 기울기가 $\\frac{1}{\\tau}$인 삼각파 $ \\tau \\text{sinc}^2 \\left ( \\frac{\\omega \\tau}{2\\pi}\\right)$ 21 $ e^{-\\frac{t^2}{2\\sigma ^2}}$ $ \\sigma \\sqrt{\\pi} e^{-\\frac{\\sigma^2\\omega^2}{2}}$","author":{"@type":"Person","name":"dsaint31"},"@type":"BlogPosting","url":"http://localhost:4000/signals_and_systems/2018/04/24/SS_FT_Table.html","headline":"Table : Fourier Transform","dateModified":"2018-04-24T22:33:59+09:00","datePublished":"2018-04-24T22:33:59+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/signals_and_systems/2018/04/24/SS_FT_Table.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Table : Fourier Transform</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-04-24T22:33:59+09:00" itemprop="datePublished">Apr 24, 2018
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">dsaint31</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="a-short-table-of-fourier-transforms">A Short Table of Fourier Transforms</h1>
+<p>@(Signal and System)[#Fourier]</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>$x(t)$</th>
+      <th>$X(\omega)$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>$e^{-a t} u(t) , a&gt;0$</td>
+      <td>$\frac{1}{a+j\omega}$</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>$e^{a t} u(-t) , a&gt;0$</td>
+      <td>$\frac{1}{a-j\omega}$</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>$e^{-a \vert t\vert}, a&gt;0$</td>
+      <td>$\frac{2a}{a^2+\omega^2}$</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>$te^{-a t}u(t), a&gt;0$</td>
+      <td>$\frac{1}{ (a+j\omega)^2}$</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>$t^ne^{-a t}u(t), a&gt;0$</td>
+      <td>$\frac{n!}{ (a+j\omega)^{n+1}}$</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>$\delta(t)$</td>
+      <td>$1$</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>$1$</td>
+      <td>$2\pi \delta(\omega)$</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>$e^{j\omega_0t}$</td>
+      <td>$2\pi \delta (\omega-\omega_0) $</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>$\text{sgn}(t)$</td>
+      <td>$\frac{2}{j\omega}$</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>$u(t)$</td>
+      <td>$\pi \delta(\omega) +\frac{1}{j\omega}$</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>$\cos \omega_0 t$</td>
+      <td>$\pi \left[ \delta(\omega+\omega_0) + \delta (\omega-\omega_0) \right]$</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>$\sin \omega_0 t$</td>
+      <td>$j\pi \left[ \delta(\omega+\omega_0) - \delta (\omega-\omega_0) \right]$</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>$\cos \omega_0 t u(t)$</td>
+      <td>$\frac{\pi}{2} \left[ \delta(\omega+\omega_0) + \delta (\omega-\omega_0) \right] +\frac{j\omega}{\omega_0^2-\omega^2}$</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>$\sin \omega_0 t u(t)$</td>
+      <td>$\frac{\pi}{2j} \left[ \delta(\omega+\omega_0) - \delta (\omega-\omega_0) \right] +\frac{\omega_0}{\omega_0^2-\omega^2}$</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>$e^{-at} \sin \omega_0t u(t), a&gt;0$</td>
+      <td>$ \frac{\omega_0}{(a+j\omega)^2+\omega_0^2}$</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>$e^{-at} \cos \omega_0t u(t), a&gt;0$</td>
+      <td>$ \frac{a+j\omega}{(a+j\omega)^2+\omega_0^2}$</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>$ \sum_{n=-\infty}^{\infty} \delta(t-nT_s)$</td>
+      <td>$ \omega_0 \sum_{n=-\infty}^{\infty} \delta(\omega-n\omega_0) , \omega_0=\frac{2\pi}{T_s}$</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>$ \text{rect}_\tau (t)$, 너비가 $\tau$인 rectangle pulse</td>
+      <td>$ \tau \text{sinc}\left ( \frac{\omega \tau}{2\pi}\right)$</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>$ \frac{W}{2\pi} \text{sinc}\left ( \frac{W}{2\pi}t\right)$</td>
+      <td>$\text{rect}_W (\omega)$, 너비가 $W$인 rectangle pulse$</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>$ \Delta \left ( \frac{t}{\tau}\right)$ 기울기가 $\frac{1}{\tau}$인 삼각파</td>
+      <td>$ \tau \text{sinc}^2 \left ( \frac{\omega \tau}{2\pi}\right)$</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>$ e^{-\frac{t^2}{2\sigma ^2}}$</td>
+      <td>$ \sigma \sqrt{\pi} e^{-\frac{\sigma^2\omega^2}{2}}$</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div><a class="u-url" href="/signals_and_systems/2018/04/24/SS_FT_Table.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Your awesome title</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

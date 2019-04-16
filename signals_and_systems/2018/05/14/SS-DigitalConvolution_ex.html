@@ -1,0 +1,29 @@
+<h1 id="digital-convolution--example">Digital Convolution : example</h1>
+<p>@(Signal and System)[#convolution]</p>
+
+<p>다음의 두 함수는 impulse reponse임.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+h_2 &= 0.5\delta[n]-0.25\delta[n-1] \\
+h_4 &= (-2)(0.5)^nu[n]
+\end{align*} %]]></script>
+
+<p>이들을 각각 impulse response로 가지는 두 시스템을 직렬연결한 시스템의 impulse response를 구하시오.</p>
+
+<h3 id="proof">proof</h3>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+h_2[n]*h_4[n] &= \left\{ 0.5\delta[n]-0.25\delta[n-1]\right\}*\left\{(-2)(0.5)^nu[n]\right\} \\
+&= 0.5\delta[n]*(-2)(0.5)^nu[n] -0.25\delta[n-1]*(-2)(0.5)^nu[n] \\
+&= (0.5)(-2)\left[ (0.5)^n\delta[n]*u[n]\right] +(-0.25)(-2)\left[(0.5)^n\delta[n-1]*u[n] \right]\\
+&= (-1)\left[(0.5)^n \delta[n]*u[n] \right]+(0.5)\left[(0.5)^n\delta[n-1]*u[n] \right]\\
+&= (-1)\left[ (0.5)^n u[n] \right]+(0.5)\left[(0.5)^{n-1}u[n-1] \right]\\
+&= -(0.5)^nu[n] +(0.5)(0.5)^{n-1}u[n-1] \\
+&= -(0.5)^nu[n] +(0.5)^{n}u[n-1] \\
+&= -(0.5)^n \left[ u[n] -u[n-1] \right] \\
+&= -(0.5)^n \delta[n] \\
+&= -(0.5)^0 \delta[n] \\
+&= - \delta[n] \\
+\end{align*} %]]></script>

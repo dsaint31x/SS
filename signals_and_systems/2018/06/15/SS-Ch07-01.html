@@ -1,0 +1,36 @@
+<h1 id="7-1-연습문제-풀이">7-1 연습문제 풀이</h1>
+
+<p>@(Signal and System)[#연습문제풀이]</p>
+
+<p>일단, impulse response는 다음과 같음.
+<script type="math/tex">\begin{align*}
+h[n]=(-1)^ng[n] \\
+\end{align*}</script></p>
+
+<p>이를 DTFT를 시키면 다음과 같음.
+<script type="math/tex">% <![CDATA[
+\begin{align*}
+H[\omega]&=\sum^\infty_{-\infty}h[n]e^{-j\omega n} \\
+&=\sum^\infty_{-\infty}(-1)^ng[n]e^{-j\omega n} \\
+&=\sum^\infty_{-\infty}(\cos\pi+j\sin\pi)^ng[n]e^{-j\omega n} \\
+&=\sum^\infty_{-\infty}e^{j\pi n}g[n]e^{-j\omega n} \\
+&=\sum^\infty_{-\infty}g[n]e^{-j(\omega-\pi) n} \\
+&=G(\omega-\pi)
+\end{align*} %]]></script></p>
+
+<p>$G(\omega)$는 다음을 만족.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+G(\omega) = \left\{ \begin{matrix} 1,& \vert \omega \vert \le \frac{\pi}{4} \\ 0, & \frac{\pi}{4} \lt \vert \omega \vert \le \pi  \end{matrix} \right. %]]></script>
+
+<p>$G(\omega)$와 $G(\omega-\pi)$의 freq. response는 다음과 같음.</p>
+
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vSTJmUhoKVCbY29luc5fJHGe2f9XyHay0x5sAnVMvezt_dWbRSpg6N36tT73Yuk4l58PQfPz9L8aXjA/pub?w=821&amp;h=389" alt="SS_7-1_01" /></p>
+
+<p>입력 신호의 DTFT는 다음과 같음.</p>
+
+<script type="math/tex; mode=display">X(\omega)=1-\frac{\vert \omega \vert}{2\pi} , \text{for } \vert \omega \vert \le \pi</script>
+
+<p>결국 출력의 DFTF의 모양은 다음과 같음.</p>
+
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vR4HC2Ucr9UVo8n4036zyOVsckn-t_NafvnnW9rNvUPrxNrJMdeN6PmQ_cTH5hqD5LGtdiSXY3hgBiD/pub?w=351&amp;h=514" alt="SS_7-1_02" /></p>
