@@ -131,7 +131,7 @@ A_{k} &= \frac{1}{(N-k)!}\left[ \frac {\text{d}^{N-k}}{\text{d}s^{N-k}} \left\{ 
 \end{align*} 
 $$ 
 
-### 3.Complex Poles
+## 3.Complex Poles
 
 $$
 \begin{align*} 
