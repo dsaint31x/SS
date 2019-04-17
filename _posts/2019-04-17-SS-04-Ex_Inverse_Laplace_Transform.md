@@ -44,7 +44,7 @@ $$
 
 $$
 \begin {align*}
-B&= \left. \frac{8s^2-7s-6}{(s)(s-3)} \right |_{s=-2} \\
+C&= \left. \frac{8s^2-7s-6}{(s)(s-3)} \right |_{s=-2} \\
 &= \frac{32+14-6}{-2\cdot -5} = \frac{40}{10} \\
 &= 4
 \end {align*}
