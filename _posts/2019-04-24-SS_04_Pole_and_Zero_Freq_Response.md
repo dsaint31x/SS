@@ -1,4 +1,5 @@
 ---
+layout: single
 title:  "[SS] 04 Poles, Zeros and Freq. Response"
 date:   2019-04-24 12:17:59
 author: dsaint31
