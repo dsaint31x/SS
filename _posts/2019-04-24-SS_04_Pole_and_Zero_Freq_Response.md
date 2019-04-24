@@ -9,4 +9,4 @@ tags: pole zero, sympy
 
 # Pole, Zero and Frequency Response
 
-<script src="https://gist.github.com/dsaint31x/5ddc7c37d828d51a4ff0411d104de843.js"></script>
+<script src="https://gist.github.com/dsaint31x/a695c172d61e1117ee8aacc284828fc2.js"></script>
