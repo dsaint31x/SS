@@ -1,5 +1,5 @@
 ---
-title:  "[SS] Fourier Transform of Impulse Train"
+title:  "[SS] 03 Fourier Transform of Impulse Train"
 date:   2019-04-02 13:33:59
 author: dsaint31
 categories: Signals_and_Systems
